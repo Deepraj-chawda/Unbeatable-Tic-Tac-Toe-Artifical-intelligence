@@ -39,12 +39,10 @@ def wins(data) :
        if ( (data[0]==data[1]==data[2]==COM) or (data[3]==data[4]==data[5]==COM) or (data[6]==data[7]==data[8]==COM) or 
              (data[0]==data[3]==data[6]==COM) or (data[1]==data[4]==data[7]==COM) or (data[2]==data[5]==data[8]==COM) or 
              (data[0]==data[4]==data[8]==COM)  or (data[2]==data[4]==data[6]==COM) ) :
-            
             return 1
         elif ( (data[0]==data[1]==data[2]==PLAY) or (data[3]==data[4]==data[5]==PLAY) or (data[6]==data[7]==data[8]==PLAY) or 
                (data[0]==data[3]==data[6]==PLAY) or (data[1]==data[4]==data[7]==PLAY) or (data[2]==data[5]==data[8]==PLAY) or 
-               (data[0]==data[4]==data[8]==PLAY)  or (data[2]==data[4]==data[6]==PLAY) ) :
-                        
+               (data[0]==data[4]==data[8]==PLAY)  or (data[2]==data[4]==data[6]==PLAY) ) :             
             return -1       
         elif " " not in data :
             return 0    
@@ -55,7 +53,6 @@ def wins(data) :
 
 #This function check whether board is empty or not
 def isempty(my_board) :
-    
     if " " in my_board:
         return True
     return False
@@ -104,22 +101,18 @@ def min_max(board,max_play) :
         if board[i] == " " :  #check all the vaild position
             board[i] = COM
             move_val = min_max(board,False)
-            board[i] = " "
-                      
+            board[i] = " "          
             if (move_val > best) :
                 move=i
-                best=move_val
-            
+                best=move_val         
     return move
  
  def computer() :  
     global start,end
     start=time.time() 
 #For calculating time taken by computer
-    
     best_move= bestmove(board)
-    board[best_move] = COM   
-    
+    board[best_move] = COM
     end=time.time()
  
 #this is main function 
@@ -128,7 +121,6 @@ def main() :
     print('" WELCOME "'.center(90))
     print('"UNBEATABLE AI"'.center(90))
     print('"TIC TAC TOE BY DEEPRAJ"'.center(90))
-    
     #print template of board for user understanding
     make_board(['1','2','3','4','5','6','7','8','9'])
     global COM,PLAY,board
@@ -165,7 +157,6 @@ flag=0
             time.sleep(1.5) #stop for 1.5 sec to see human chance 
             clear()
             print("\nTime taken by computer {:.40f} sec\n".format(end-start))
-
         print('\n')
         make_board(board) 
 if wins(board) == 1 :
