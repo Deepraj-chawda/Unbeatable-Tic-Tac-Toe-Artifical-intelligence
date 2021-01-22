@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[3]:
 
 
 import time
@@ -205,28 +202,13 @@ def main() :
             main()
         else :
             break
-           
-            
-
-            
-            
-            
+                      
             
 main()
 
 
         
 
-
-# #### 
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
