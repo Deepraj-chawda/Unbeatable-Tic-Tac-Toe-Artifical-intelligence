@@ -1,6 +1,8 @@
 # Unbeatable-Tic-Tac-Toe-Artifical-intelligence using Minimax Algorithm in python by Deepraj Chawda .
 
 `for more information watch my video on youtube Link :-> https://youtu.be/kPBH2a86u0U`
+
+
 import time
 import os
 PLAY=''
@@ -9,7 +11,7 @@ start=0
 end=0
 board = [' ',' ',' ',' ',' ',' ',' ',' ',' ']
 
-#This will make a template of tic tac toe
+##This will make a template of tic tac toe
 
 def make_board(b) :
     print("------------------------")
