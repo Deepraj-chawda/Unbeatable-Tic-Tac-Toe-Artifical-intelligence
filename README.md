@@ -1,6 +1,6 @@
 # Unbeatable-Tic-Tac-Toe-Artifical-intelligence using Minimax Algorithm in python by Deepraj Chawda .
 
-
+`for more information watch my video on youtube Link :-> https://youtu.be/kPBH2a86u0U`
 import time
 import os
 PLAY=''
